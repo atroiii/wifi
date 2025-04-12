@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css/styles.css ">
+</head>
+<body>
+    <img src="img/logo.png" alt="Logo" class="logo" align="center" width="200" height="100"><br><br>
+    <div class="container">
+        <div class="white-table">
+            <h1>Login para colaboradores</h1><br>
+            <p>- Para acessar o wifi, utilize a mesma senha do totem</p><br>
+            <form action="pagina2.html" id="form-colaboradores" onsubmit="return validarColaboradores()" action="login" method="post">
+                <label for="Empresa">Empresa:</label><br>
+                <select style="width: 495px;" id="Empresa" name="Empresa">
+                    <textarea rows="5" cols="50"></textarea>
+                    <option value="Rivelli Alimentos S/A" disabled selected>Rivelli Alimentos S/A</option>
+                    <option value="Rivelli Alimentos S/A">Matriz </option>
+                    <option value="Rivelli Alimentos S/A">Fábrica de Rações</option>
+                    <option value="Rivelli Alimentos S/A">Incubatório</option>
+                </select><br><br>   
+                <label for="Matrícula">Matrícula:</label><br>
+                <input type="text" size="40" id="Matrícula" name="Matrícula" placeholder="Matrícula"><br><br>
+                <label for="Senha">Senha:</label><br>
+                <input type="text" id="Senha" size="40" name="Senha" placeholder="Senha"><br><br>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+        <div class="white-table" style="margin-top: 30px;">
+            <h2>Login para visitantes</h2><br>
+            <p>-Visitante, solicite seu voucher na recepção</p><br>
+            <form action="pagina2.html" id="form-visitantes" onsubmit="return validarVisitantes()" action="login" method="post">
+                <label for="Voucher">Voucher:</label><br>
+                <input type="text" size="40" id="Voucher" name="Voucher" placeholder="Voucher"><br><br>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>  
+    </div>  
+    <script>
+        function validarColaboradores() {
+            const empresa = document.getElementById("Empresa").value;
+            const matricula = document.getElementById("Matrícula").value;
+            const senha = document.getElementById("Senha").value;
+    
+            if (!empresa || !matricula || !senha) {
+                alert("Por favor, preencha todos os campos do login de colaboradores.");
+                return false; // Impede o envio do formulário
+            }
+            return true; // Permite o envio do formulário
+        }
+    
+        function validarVisitantes() {
+            const voucher = document.getElementById("Voucher").value;
+    
+            if (!voucher) {
+                alert("Por favor, preencha o campo de voucher.");
+                return false; // Impede o envio do formulário
+            }
+            return true; // Permite o envio do formulário
+        }
+    </script>
+</body>
+</html>

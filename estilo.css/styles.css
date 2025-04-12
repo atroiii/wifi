@@ -1,0 +1,112 @@
+body {
+    background-color: #f1f1f19a; /* Cor de fundo da página */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da tela */
+    margin: 0;
+    text-align: center;
+}
+.white-table {
+    background-color: white;
+
+    padding: 20px; /* Aumente o padding para "cobrir" mais a tabela */
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza a tabela */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 16px; /* Aumente o tamanho da fonte */
+}
+.white-table h1,
+.white-table h2,
+.white-table p,
+.white-table label,
+.white-table input,
+.white-table select {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* Remove o espaço entre as linhas do texto */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+}
+
+input[type="submit"] {
+    display: block; /* Garante que o elemento se comporte como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input#Matrícula {
+    background: url('../img/user.png') no-repeat right 10px center;
+    background-size: 20px;
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+input#Senha {
+    background: url('../img/lock.png') no-repeat right 10px center;
+    background-size: 20px;
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+input#Voucher {
+    background:url('../img/mail.png')  no-repeat right 10px center;
+    background-size: 20px;
+    padding-right: 40px; /* Espaço para o ícone */
+}
+.container {
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessário */
+    padding: 20px; /* Ajuste conforme necessário */
+}
+
+img.logo {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+input[type="submit"] {
+    background-color: red;
+    color: white; /* Opcional: para deixar o texto branco */
+    border: none; /* Opcional: para remover a borda padrão */
+    padding: 5px px; /* Opcional: para adicionar um preenchimento */
+    cursor: pointer; /* Opcional: para mudar o cursor ao passar por cima */
+}
+.container2 body {
+    background-color: #f1f1f19a; /* Cor de fundo da página */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0;
+    text-align: center; /* Centraliza o texto */
+}
+.container2.white-table {
+    background-color: white;
+    padding: 40px; /* Aumenta o preenchimento interno */
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Aumenta a largura máxima da tabela */
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    text-align: center; /* Centraliza o texto dentro da tabela */
+    font-size: 18px; /* Aumenta o tamanho do texto */
+}
