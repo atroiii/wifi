@@ -72,16 +72,23 @@ img.logo {
     width: 200px; /* Ajuste a largura conforme necessário */
     height: 100px; /* Ajuste a altura conforme necessário */
 }
-
 @media (max-width: 600px) {
-    img {
-        width: 100px;
+    body.pagina2 {
+        padding: 10px; /* Adiciona um pequeno espaçamento nas laterais */
     }
 
-    .container {
-        padding: 10px;
+    .white-table {
+        padding: 20px; /* Reduz o preenchimento interno para caber melhor na tela */
+        max-width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+        font-size: 16px; /* Reduz o tamanho do texto para caber melhor */
+    }
+
+    img.logo {
+        width: 150px; /* Reduz o tamanho da imagem no celular */
+        height: auto; /* Mantém a proporção da imagem */
     }
 }
+
 input[type="submit"] {
     background-color: red;
     color: white; /* Opcional: para deixar o texto branco */
