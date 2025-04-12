@@ -87,7 +87,6 @@ img.logo {
         width: 150px; /* Reduz o tamanho da imagem no celular */
         height: auto; /* Mantém a proporção da imagem */
     }
-}
 
 input[type="submit"] {
     background-color: red;
